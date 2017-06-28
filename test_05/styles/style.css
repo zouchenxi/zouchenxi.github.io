@@ -191,7 +191,6 @@ ul li {
         padding-top: 20px;
     }
 }
-<<<<<<< HEAD
 @media screen and (max-width: 1024px) {
     .menu {
         display: none;
@@ -241,5 +240,3 @@ body .nav-toggle {
 .nav-checkbox:checked~.logo-menu {
     opacity: 1;
 }
-=======
->>>>>>> d1885ff6c6fb82840329dee6f36aa659066b31a4
