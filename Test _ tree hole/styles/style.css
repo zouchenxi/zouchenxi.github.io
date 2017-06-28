@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.content {
+  width: 320px;
+  margin: auto;
+}
+
+#logo {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.input-wrapper {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.form-input {
+  outline: 0;
+  width: 270px;
+  height: 44px;
+  font-size: 16px;
+  padding-left: 15px;
+  display: block;
+}
+
+.login-form {
+  width: 290px;
+  margin: auto;
+}
+
+.form-container {
+  border-radius: 4px;
+}
+
+.login-button {
+  outline: 0;
+  color: #fff;
+  width: 290px;
+  display: block;
+  border: 0;
+  height: 44px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 15px;
+  background-color: #146fdf;
+}

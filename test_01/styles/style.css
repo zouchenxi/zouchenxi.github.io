@@ -1,0 +1,12 @@
+html {
+    background-image: url(../image/beijing.jpg)
+}
+h1,h2 {
+    font-family: Microsoft YaHei
+}
+body{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 20px 20px 20px;
+}

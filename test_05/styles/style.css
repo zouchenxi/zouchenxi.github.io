@@ -1,0 +1,245 @@
+@font-face {
+    font-family: DINOT-CondRegular;
+    src: url(zouchenxi.github.io/text_05/fonts/DINOT-CondRegular.otf)
+}
+html,body {
+    font-family: DINOT-CondRegular,sans-serif;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    /*background-image: url(../images/background.png);
+    background-size: 100% cover;
+    background-repeat: no-repeat;*/
+}
+/*.background {
+    background: url(../images/background.png) no-repeat center center;
+    z-index: -1;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    margin: auto;
+    left: -192px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    animation: move 30s linear infinite;
+}*/
+
+/* 背景图动画效果 */
+@keyframes move {
+    from {
+        transform: translateX(0px)
+    }
+    25% {
+        transform: translateX(192px)
+    }
+    50% {
+        transform: translateX(0px)
+    }
+    75% {
+        transform: translateX(-192px)
+    }
+    to {
+        transform: translateX(0px)
+    }
+}
+.background {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+.background img {
+    animation: move 30s linear infinite;
+    z-index: -1;
+    position: absolute;
+    width: auto;
+    height: 120%;
+    margin: auto;
+    left: -192px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+}
+ul {
+    display: flex;
+    align-items: center;
+    perspective: 400px;
+}
+ul li {
+    margin-right: 30px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    color: #ababab;
+    transition: opacity .4s, transform .5s;
+}
+.header .menu-content::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -5px;
+    background: #fff;
+    transition: .2s;
+    transform: scale(0);
+}
+.header .menu-content:hover::after {
+    transform: scale(1);
+}
+.header a {
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #ababab;
+}
+.header ul li a:hover {
+    color: #fff;
+    transition: .5s;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #ababab;
+}
+.button:hover {
+    background: #fff;
+    transition: .5s;
+}
+.button span {
+    text-transform: uppercase;
+    color: #ababab;
+}
+.main .content .logo {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20vh;
+}
+.main .content .logo img {
+    width: 70%;
+    height: 66%;
+    margin: 0 auto;
+    margin-bottom: -2vw;
+}
+.main .content .logo a {
+    font-weight: bold;
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ababab;
+}
+.main .content .logo a:hover {
+    color: #fff;
+    transition: .5s;
+}
+.main .content .movie-info {
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+.main .movie-info p {
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    color: hsla(0, 0%, 100%, .5);
+}
+.main .content .movie-info .credits{
+    width: 85%;
+    max-width: 750px;
+}
+.main .content .movie-info .pg-13{
+    width: 10%;
+    max-width: 420px;
+}
+@media screen and (max-width: 1024px) {
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .menu {
+        flex-basis: 100%;
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header .menu-content::after {
+        height: 1px;
+        bottom: 0px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header .menu-button {
+        padding-top: 20px;
+    }
+}
+<<<<<<< HEAD
+@media screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+}
+input.nav-checkbox {
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    opacity: 0;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+}
+body .nav-toggle {
+    display: none;
+    color: #ababab;
+    padding: 0;
+    font-size: 24px;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    text-align: center;
+    line-height: 35px;
+    /*border-radius: 2px;
+    border: 1px solid #ccc;*/
+}
+@media screen and (max-width: 1024px) {
+    body .nav-toggle {
+        display: block;
+    }
+}
+.nav-checkbox:checked~header .menu {
+    display: block;
+}
+.logo-menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 0;
+    top: 15px;
+}
+.nav-checkbox:checked~.logo-menu {
+    opacity: 1;
+}
+=======
+>>>>>>> e4aeda29b6c0839c33d43a41d1a89a12a9a1bf3c
