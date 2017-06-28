@@ -3,7 +3,7 @@
     src: url(zouchenxi.github.io/text_05/fonts/DINOT-CondRegular.otf)
 }
 html,body {
-    font-family: DINOT-CondRegular,sans-serif;
+    font-family: DINOT-CondRegular,Microsoft YaHei,sans-serif;
     font-weight: 300;
     width: 100%;
     height: 100%;
@@ -242,4 +242,4 @@ body .nav-toggle {
     opacity: 1;
 }
 =======
->>>>>>> e4aeda29b6c0839c33d43a41d1a89a12a9a1bf3c
+>>>>>>> d1885ff6c6fb82840329dee6f36aa659066b31a4
