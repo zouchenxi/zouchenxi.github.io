@@ -143,6 +143,7 @@ ul li {
     text-transform: uppercase;
     text-decoration: none;
     color: #ababab;
+    z-index: 4;
 }
 .main .content .logo a:hover {
     color: #fff;
