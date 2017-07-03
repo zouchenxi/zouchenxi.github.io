@@ -3,6 +3,7 @@ html,body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 ul,ol {
     margin: 0;
@@ -10,7 +11,7 @@ ul,ol {
     list-style: none;
 }
 a {
-    text-decoration-line: none;
+    text-decoration: none;
 }
 
 /* 设置页面头部属性 */
