@@ -1,0 +1,16 @@
+.nav {
+    margin: 0 auto;
+    padding: 0 22px;
+    max-width: 980px;
+    height: 100%;
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .nav-content-menu {
+            height: 44px;
+            line-height: 44px;
+        }
+    }
+}

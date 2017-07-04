@@ -32,7 +32,7 @@ a {
 }
 
 /* 设置导航栏总体布局 */
-.nav-content {
+.nav .nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,18 +40,18 @@ a {
 }
 
 /* 设置导航栏菜单属性 */
-.nav-content-menu {
+.nav .nav-content .nav-content-menu {
     height: 44px;
     line-height: 44px;
 }
  /* 设置导航栏链接属性 */
- .nav-content-link {
+.nav-content-menu .nav-content-link {
      display: inline-block;
      padding: 0 10px;
      height: 44px;
-     color: #fff;
      font-size: .875rem;
      font-weight: 300;
+     color: #fff;
  }
 
 /* 设置鼠标经过导航栏链接动画效果 */
