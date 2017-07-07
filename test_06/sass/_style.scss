@@ -1,3 +1,28 @@
+/* 清除默认样式 */
+html,body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+ul,ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* 设置页面头部属性 */
+.header {
+    position: absolute;
+    width: 100%;
+    min-width: 320px;
+    height: 44px;
+    background: rgba(0, 0, 0, .8);
+}
+
 .nav {
     margin: 0 auto;
     padding: 0 22px;
@@ -7,10 +32,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 -10px;
         height: 100%;
         .nav-content-menu {
             height: 44px;
             line-height: 44px;
+        }
+        .nav-content-link {
+            display: inline-block;
+            padding: 0 .625rem;
+            height: 44px;
+            font-size: .875rem;
+            font-weight: 300;
+            color: #fff;
         }
     }
 }

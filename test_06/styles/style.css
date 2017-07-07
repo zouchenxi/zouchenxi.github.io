@@ -36,6 +36,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 -10px;
     height: 100%;
 }
 
@@ -44,7 +45,30 @@ a {
     height: 44px;
     line-height: 44px;
 }
- 
+
+/* 设置导航栏logo图标属性 */
+.nav .nav-content .nav-content-menu .nav-content-link-logo {
+    background-size: 20px 44px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/image_apple.svg);
+    width: 20px;
+}
+.nav .nav-content .nav-content-menu .nav-content-link-search {
+    background-size: 16px 44px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/image_search.svg);
+    width: 16px;
+}
+.nav .nav-content .nav-content-menu .nav-content-link-bag {
+    background-size: 14px 44px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/image_bag.svg);
+    width: 14px;
+}
+
  /* 设置导航栏链接属性 */
 .nav-content-menu .nav-content-link {
      display: inline-block;
