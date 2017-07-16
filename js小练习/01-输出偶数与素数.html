@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by zouchenxi (http://jsbin.com/kisesel/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS小练习 - 输出偶数与素数</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+// 给定如下整数 n, 输出从 0 - n 的所有偶数。
+var n = 10 + Math.ceil(Math.random() * 90);
+var i, even = [];
+for (var i = 0; i <= n; i++) {
+  if (i % 2 === 0) {
+    even.push(i);
+  }
+}
+console.log('输出0-' + n +'的所有偶数');
+console.log(even)
+
+// 给定如下整数 n, 输出从 2 - n 之间的所有素数。素数是只能表示为它自身和 1 的乘积的整数。
+var n = 10 + Math.ceil(Math.random() * 90);
+var m, i, prime = [];
+for (m = 2; m < n; m++) {
+  for (i = 2; i < m; i++) {
+    if (m % i === 0) {
+      break;
+    }
+  }
+  if (m === i) {
+    prime.push(m);
+  }
+}
+console.log('输出2-' + n +'之间的所有素数');
+console.log(prime);
+</script>
+</body>
+</html>
