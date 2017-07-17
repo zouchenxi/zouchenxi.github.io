@@ -9,78 +9,79 @@ Released under the MIT license: http://jsbin.mit-license.org
 -->
 <meta name="robots" content="noindex">
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS小练习 - 函数相关练习</title>
 </head>
+
 <body>
 
-<script id="jsbin-javascript">
-/**
+  <script id="jsbin-javascript">
+    /**
  * 给定长方形的宽和高，计算其面积并返回。
  * 若 宽 === 高，则只需要传入宽的值。
  * @param {number} width 宽
  * @param {number} height 高
  * @return {number}
  */
-function area(width, height = width) {
-  return width * height;
-}
-console.log('输入宽高都为5时')
-console.log(area(5));
-console.log('输入宽高为4，10时')
-console.log(area(4, 10));
-
-/**
- * 输入任意数目的数字参数，返回其中最大的数字。
- * @return {number}
- */
-function max() {
-  var maxNumber = arguments[0];
-  for (let i = 1, j = arguments.length; i < j; i++) {
-    if (maxNumber < arguments[i]) {
-      maxNumber = arguments[i];
+    function area(width, height = width) {
+      return width * height;
     }
-  }
-  return maxNumber;
-}
-console.log('最大数字是：' + max(4, 89, 9, 1, 32, 2, 15, 92));
+    console.log('输入宽高都为5时')
+    console.log(area(5));
+    console.log('输入宽高为4，10时')
+    console.log(area(4, 10));
 
-/**
- * 给定数字 x，返回 x 自乘 n 次的结果。
- * @param {number} x
- * @param {number} n - 正整数
- * @return {number}
- */
-function pow(x, n) {
-  var a = Math.pow(x, n);
-  return a;
-}
-console.log('x^n的结果为' + pow(4, 3));
-
-/**
- * 计算在某段文本 content 中出现某个特定字符串 search 的次数。
- * @param {string} content - 被搜索的文本内容
- * @param {string} search - 查找的字符串
- * @return {number} 字符串 search 在 content 中出现的次数，没有则返回 0。
- */
-function appearances(content, search) {
-  var count = 0;
-  var index = 0;
-  while (index !== -1) {
-    index = content.indexOf(search, index);
-    if (index !== -1) {
-      count++;
-      index++;
+    /**
+     * 输入任意数目的数字参数，返回其中最大的数字。
+     * @return {number}
+     */
+    function max() {
+      var maxNumber = arguments[0];
+      for (let i = 1, j = arguments.length; i < j; i++) {
+        if (maxNumber < arguments[i]) {
+          maxNumber = arguments[i];
+        }
+      }
+      return maxNumber;
     }
-  }
-  console.log(`在'${content}'中'${search}'出现了'${count}'次`)
-  return count;
-}
+    console.log('最大数字是：' + max(4, 89, 9, 1, 32, 2, 15, 92));
 
-appearances("鹅，鹅，鹅，曲项向天歌","鹅")
+    /**
+     * 给定数字 x，返回 x 自乘 n 次的结果。
+     * @param {number} x
+     * @param {number} n - 正整数
+     * @return {number}
+     */
+    function pow(x, n) {
+      var a = Math.pow(x, n);
+      return a;
+    }
+    console.log('x^n的结果为' + pow(4, 3));
 
-</script>
+    /**
+     * 计算在某段文本 content 中出现某个特定字符串 search 的次数。
+     * @param {string} content - 被搜索的文本内容
+     * @param {string} search - 查找的字符串
+     * @return {number} 字符串 search 在 content 中出现的次数，没有则返回 0。
+     */
+    function appearances(content, search) {
+      var count = 0;
+      var index = 0;
+      while (index !== -1) {
+        index = content.indexOf(search, index);
+        if (index !== -1) {
+          count++;
+          index++;
+        }
+      }
+      console.log(`在'${content}'中'${search}'出现了'${count}'次`)
+      return count;
+    }
+    appearances("鹅，鹅，鹅，曲项向天歌", "鹅")
+  </script>
 </body>
+
 </html>
