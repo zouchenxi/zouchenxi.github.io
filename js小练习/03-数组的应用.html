@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by zouchenxi (http://jsbin.com/haliwec/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS练习 - 数组d 应用</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+/**
+ * 给一定个数字数组，计算该数组元素的和。
+ * 输入 [1, 2, 3] 返回 6。
+ * @param {number[]} numbers
+ * @return {number}
+ */
+function sumOfArray(numbers) {
+  return numbers.reduce((a, b) => a + b);
+}
+console.log('输入[1, 2, 3]求和的值为' + sumOfArray([1, 2, 3]));
+
+/**
+ * 给定一个字符串，将这个字符串反转并返回。
+ * 输入 'ABCDE' 返回 'EDCBA'。
+ * @param {string} s
+ * @return {string}
+ */
+function reverseOfString(s) {
+  return s.split('').reverse().join('');
+}
+console.log(reverseOfString('ABCDE'));
+
+/**
+ * 给定一个公元年份(1 - 10000)，返回相应中国农历年的 emoji 图案。
+ * 输入 2018 返回 "🐶"。已知公元 2017 年是中国农历鸡年。
+ * @param {number} year 
+ * @param {string}
+ */
+function sx(year) {
+  var rooster = "🐔";
+  var sxs = ["🐭", "🐮", "🐯", "🐰", "🐲", "🐍", "🐴", "🐑", "🐵", "🐔", "🐶", "🐷"];
+}
+console.log('没太理解这道题')
+
+/**
+ * 给定一个数字数组，移除其中的重复元素后返回。
+ * 输入 [1, 1, 3, 4, 3, 6] 返回 [1, 3, 4, 6]。
+ * @param {number[]} numbers
+ * @return {number[]}
+ */
+function unique(numbers) {
+var newArray = [];
+  numbers.forEach(function(element) {
+    if(newArray.indexOf(element) === -1) {
+      newArray.push(element);
+  }
+})
+  return newArray;
+}
+console.log(unique([1, 1, 3, 4, 3, 6]));
+
+/** 
+ * 给定一个非负整数，它的各位数字以数组存储，给这个数字加 1。
+ * 除了数字 0 以外，该数字不会以 0 开头。数字最高位在数组开头。
+ * 输入 [1, 2, 3] 以表示数字 123，返回 [1, 2, 4]
+ * 输入 [9, 9, 9] 以表示数字 999，返回 [1, 0, 0, 0]
+ * @param {number[]} digits 用于表示输入数字各个位数的数组
+ * @return {number[]} 用于表示结果数字各个位数的新数组
+ */
+function plusOne(digits) {
+  var newString = digits.join('');
+  var num = parseInt(newString) + 1;
+  var newArray = num.toString().split('');
+  return newArray;
+}
+console.log(plusOne([1, 2, 3]));
+console.log(plusOne([9, 9, 9]));
+
+/**
+ * 给定一个只包含 '(', ')', '{', '}', '[', ']' 的字符串，判断字符串内的括号是否匹配。
+ * '()' 及 '()[]{}' 表示匹配，而 '(]' 和 '([)]' 是不匹配的。匹配返回 true，否则 false。
+ * @param {string} s
+ * @return {boolean}
+ */
+function valid(s) {
+
+}
+console.log('没理解什么意思')
+</script>
+</body>
+</html>
