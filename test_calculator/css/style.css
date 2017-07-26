@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 body {
     display: flex;
@@ -9,4 +10,39 @@ body {
     width: 100vw;
     height: 100vh;
     background: #ccc;
+}
+.calculator-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 26.25rem;
+    height: 100%;
+    background: #fff;
+}
+@media (min-width: 768px) {
+    .calculator-wrap {
+        max-height: 667px;
+    }
+}
+.calculator-display {
+    flex: 1;
+}
+.calculator-keypad {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.calculator-keybutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    max-height: 6.25rem;
+    height: calc(100vw / 4);
+}
+.calculator-keybutton-equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
 }
