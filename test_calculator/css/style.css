@@ -1,8 +1,11 @@
+/*清除默认属性*/
 * {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -11,26 +14,49 @@ body {
     height: 100vh;
     background: #ccc;
 }
-.calculator-wrap {
+
+/*设置计算器容器大小*/
+.calculator {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 26.25rem;
+    border-radius: 8px;
+    width: 420px;
     height: 100%;
     background: #fff;
 }
 @media (min-width: 768px) {
-    .calculator-wrap {
-        max-height: 667px;
+    .calculator {
+        max-height: 736px;
     }
 }
-.calculator-display {
+
+/*设置计算器显示框*/
+.calculator-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     flex: 1;
+    padding: 5% 8%;
 }
+.calculator-result .formula {
+    font-size: 1.75rem;
+    font-weight: 100;
+    color: #98A3AB;
+}
+.calculator-result .expr {
+    font-size: 4rem;
+    font-weight: lighter;
+    color: #87949D;
+}
+
+/*设置计算器键盘按钮属性*/
 .calculator-keypad {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    box-shadow: inset 0px 15px 40px -20px #58b3ff;
 }
 .calculator-keybutton {
     display: flex;
@@ -39,10 +65,57 @@ body {
     flex-basis: 25%;
     max-height: 6.25rem;
     height: calc(100vw / 4);
+    cursor: pointer;
+    color: #85929C;
 }
+.calculator-keybutton .digital, .calculator-keybutton .operator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    font-size: 1.625rem;
+    font-weight: lighter;
+    border-radius: 50%;
+    background: #fcfeff;
+}
+.calculator-keybutton.clear {
+    font-weight: bold;
+    color: #E0360b;
+}
+.calculator-keybutton.clear .clear-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    font-size: 1.625rem;
+    border-radius: 50%;
+    background: #fcfeff;
+}
+.calculator-keybutton .operator {
+    font-size: 2.25rem;
+    font-weight: lighter;
+    color: #58b3ff;
+    box-shadow: 0px 10px 20px 0px #d2eaff;
+}
+
+/*设置计算器底部输出按钮属性*/
 .calculator-keybutton-equal {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: 12%;
+}
+.calculator-keybutton-equal .equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 2rem;
+    color: #fff;
+    box-shadow: 0px 0 20px 0px #9ed2ff;
+    width: 70%;
+    height: 65%;
+    background: #58b3ff;
 }

@@ -10,32 +10,68 @@
 </head>
 
 <body>
-    <div class="calculator-wrap">
-        <div class="calculator-display">
-            <div class="display-results">0</div>
+    <div class="calculator">
+        <div class="calculator-result">
+            <div class="formula"></div>
+            <div class="expr"></div>
         </div>
         <div class="calculator-keypad">
-            <div class="calculator-keybutton number seven">7</div>
-            <div class="calculator-keybutton number eight">8</div>
-            <div class="calculator-keybutton number nine">9</div>
-            <div class="calculator-keybutton operator divide">÷</div>
-            <div class="calculator-keybutton number four">4</div>
-            <div class="calculator-keybutton number five">5</div>
-            <div class="calculator-keybutton number six">6</div>
-            <div class="calculator-keybutton operator multiply">×</div>
-            <div class="calculator-keybutton number one">1</div>
-            <div class="calculator-keybutton number two">2</div>
-            <div class="calculator-keybutton number three">3</div>
-            <div class="calculator-keybutton operator minus">-</div>
-            <div class="calculator-keybutton operator clear">C</div>
-            <div class="calculator-keybutton number zero">0</div>
-            <div class="calculator-keybutton dot">.</div>
-            <div class="calculator-keybutton operator plus">+</div>
+            <div class="calculator-keybutton number" data-number='7'>
+                <div class="digital">7</div>
+            </div>
+            <div class="calculator-keybutton number" data-number='8'>
+                <div class="digital">8</div>
+            </div>
+            <div class="calculator-keybutton number" data-number='9'>
+                <div class="digital">9</div>
+            </div>
+            <div class="calculator-keybutton divide" data-operator='÷'>
+                <div class="operator">÷</div>
+            </div>
+            <div class="calculator-keybutton number" data-number='4'>
+                <div class="digital">4</div>
+            </div>
+            <div class="calculator-keybutton number" data-number='5'>
+                <div class="digital">5</div>
+            </div>
+            <div class="calculator-keybutton number" data-number='6'>
+                <div class="digital">6</div>
+            </div>
+            <div class="calculator-keybutton number" data-operator='×'>
+                <div class="operator">×</div>
+            </div>
+            <div class="calculator-keybutton number" data-number='1'>
+                <div class="digital">1</div>
+            </div>
+            <div class="calculator-keybutton number" data-number='2'>
+                <div class="digital">2</div>
+            </div>
+            <div class="calculator-keybutton number" data-number='3'>
+                <div class="digital">3</div>
+            </div>
+            <div class="calculator-keybutton minus" data-operator='-'>
+                <div class="operator">-</div>
+            </div>
+            <div class="calculator-keybutton clear">
+                <div class="clear-button">C</div>
+            </div>
+            <div class="calculator-keybutton number" data-number='0'>
+                <div class="digital">0</div>
+            </div>
+            <div class="calculator-keybutton dot">
+                <div class="dot-number">.</div>
+            </div>
+            <div class="calculator-keybutton plus" data-operator='+'>
+                <dvi class="operator">+</dvi>
+            </div>
         </div>
         <div class="calculator-keybutton-equal">
             <div class="equal">=</div>
         </div>
     </div>
+    <script type="text/javascript" src="scripts/app.js">
+    
+    </script>
 </body>
 
 </html>
