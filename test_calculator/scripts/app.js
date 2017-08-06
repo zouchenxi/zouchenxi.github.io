@@ -1,6 +1,6 @@
 (function () {
 
-    const RESULT_CONTENT_MAXWIDTH_PERCENTAGE = 1 - 0.07 * 2;
+    const RESULT_CONTENT_MAXWIDTH_PERCENTAGE = 1 - 0.08 * 2;
 
     // 获取网页各类元素
     let $result = document.querySelector('.calculator-result');                 //获取显示框元素
